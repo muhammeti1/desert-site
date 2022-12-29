@@ -1,0 +1,462 @@
+@font-face {
+    src: url(fonts/Joyfish\ -\ Demo.ttf);
+    font-family: nos;
+}
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Herr+Von+Muellerhoff&display=swap');
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    
+}
+a,
+a:link,
+a:visited{
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+ul,
+li{
+    list-style:none;
+    margin: 0;
+    padding: 0;
+
+}
+section,span,p{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
+.container{
+ max-width: 1170px;
+ margin: 0 auto;
+ padding: 0 15px;
+}
+.header{
+    background-image: url(resimler/dessert.jpg);
+    height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'nos',sans-serif;
+}
+.header-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-logo{
+    position: relative;
+    right: 300px;
+    margin-top: 25px;
+
+}
+.header-menu ul{
+    display: flex;
+    position: relative;
+    left: 150px;
+}
+   
+.header-menu li{
+    margin-left: 80px;
+}
+a{
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+.header-text{
+    position: absolute;
+    top: 35%;
+    left: 60%;
+    padding: 10px;
+    color: #EBACAF;
+    font-family: 'nos',sans-serif;
+    
+}
+h1{
+    
+    font-size: 180px;
+    font-weight: 100;
+    line-height: 0.4;
+    font-family: 'Herr Von Muellerhoff', cursive; 
+    letter-spacing: 4px;
+}
+.first-letter{
+    font-size: 230px;
+    font-family: 'Herr Von Muellerhoff', cursive; 
+}
+h3{
+   position: relative;
+   left: 40px;
+   top: 150px;
+   font-size: 30px;
+}
+.btn-dessert{
+   display: block;
+   position: relative;
+   left: 170px;
+   top: 220px;
+   font-size: 20px;
+   background-color: #BA838D;
+   color: white;
+   width: 150px;
+   height: 150px;
+   padding: 10px 15px;
+   border-radius: 50%;
+   line-height:130px;
+   font-family: 'nos',sans-serif;
+   overflow: hidden;
+}
+.btn-dessert::after{
+    content:"Chocolate";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #72371E;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .6s;
+}
+.btn-dessert:hover::after{
+    top: 0;
+}
+/* ABOUT */
+.about{
+    margin-bottom: 150px;
+    flex-wrap: wrap;
+}
+.about-title{
+    margin: 70px 0 ;
+}
+.about-title h2{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: #BA838D;
+    font-size: 30px;
+    font-weight: 600;
+}
+.about-title h2::after {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background-color: #BA838D;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+.about-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+.about-img{
+    width: 80%;
+}
+.about-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.about-text{
+    width: 70%;
+    margin: 80px;
+    
+}
+h4{
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 40px;
+    color: #72371E;
+    font-family: 'Herr Von Muellerhoff', cursive; 
+    font-weight: 100;
+    font-size: 60px;
+    letter-spacing: 0.5rem;
+}
+#asteriks{
+    color: #72371E;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 30px;
+}
+.about-text p{
+    font-size: 15px;
+    text-align: center;
+    color: #BA838D;
+    font-family: 'nos',sans-serif;
+}
+/* PORTFOLIA */
+.portfolio{
+    display: flex;
+    flex-wrap: wrap;
+}
+.portfolio-item{
+    width: 25%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+.portfolio-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:#72371E;
+    opacity: 0.8;
+    top: 100%;
+    left: 0;
+    color: white;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+.portfolio-item:hover .overlay{
+    top: 0;
+    transition: .5s;
+}
+.portfolio-item:hover img{
+   transform: scale(1.1);
+}
+
+/* Discover */
+.discover{
+    margin-bottom: 150px;
+}
+.discover-title{
+    margin: 70px 0 ;
+}
+.discover-title h2{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: #BA838D;
+    font-size: 30px;
+    font-weight: 600;
+}
+.discover-title h2::after {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background-color: #BA838D;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+.discover-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.discover-img{
+    width: 80%;
+}
+.discover-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.discover-text{
+    width: 70%;
+    margin: 80px;
+    
+}
+h4{
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 40px;
+    color: #72371E;
+    font-family: 'Herr Von Muellerhoff', cursive; 
+    font-weight: 100;
+    font-size: 60px;
+    letter-spacing: 0.5rem;
+}
+#asteriks{
+    color: #72371E;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 30px;
+}
+.discover-text p{
+    font-size: 15px;
+    text-align: center;
+    color: #BA838D;
+    font-family: 'nos',sans-serif;
+}
+/* Contact */
+.contact{
+    padding: 10px 0;
+}
+.contact h2{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: #BA838D;
+    font-size: 30px;
+    font-weight: 600;
+}
+.contact h2::after{
+    content: "";
+    width: 50px;
+    height: 3px;
+    background-color: #BA838D;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+.contact-content{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.contact-item{
+    display: flex;
+    align-items: center;
+    flex-basis: 33%;
+    margin-bottom: 100px;
+    flex-direction: column;
+}
+.contact-item i {
+    font-size: 50px;
+    margin-bottom: 30px;
+    color:#72371E;
+}
+.contact-item p{
+    font-size: 20px;
+    line-height: 33px;
+}
+/* FOOTER */
+
+.footer h2{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 55px 0;
+}
+.footer h2::after{
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+.footer{
+    background-color:#72371E;
+}
+.footer-copyright{
+    color: white;
+    text-align: center;
+    flex-basis: 55%;
+    line-height: 2;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+ .footer-social i{
+    color: white;
+    margin-bottom: 50px;
+    padding:0  45px;
+    font-size: 25px;
+}
+/* MENU */
+#menu-icon{
+    font-size: 25px;
+    display: none;
+    margin-left: 20px;
+}
+@media only screen and (max-width:930px){
+  .header-menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    left:0 ;
+    background-color:#EBACAF;
+    width: 100%;
+    transition: .6s;
+    
+  }
+  .header-menu ul li {
+      margin-right: 50px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      color: white;
+  }
+ 
+  .header-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    left:170px ;
+    width: 100%;
+    bottom: 200px;
+    
+  } 
+  h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    right: 100px;
+    top: 320px;
+  }
+  .header-text a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    left:370px ;
+    top: 400px;
+  } 
+}
+@media only screen and (max-width:1456px){
+    body{
+        overflow-x: hidden;
+    }
+}
+/* MENU */
+
+@media only screen and (max-width:1190px){
+   .about-img{
+    width: 100%;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+   }
+   .about-text{
+    width: 100%;
+   }
+}
